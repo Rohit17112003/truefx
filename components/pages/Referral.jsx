@@ -30,12 +30,12 @@ const Referral = () => {
         <div className="overflow-x-scroll  md:overflow-x-hidden md:pr-8.5">
           <div className="w-[650px]  md:w-full mx-4 mt-8 rounded-xl bg-[#F1F4F9] py-3 ring ring-[#fcfdfd50] flex justify-between px-5">
           <div className="flex items-center justify-between text-[#202224] md:gap-30 gap-20 font-bold text-[1rem]">
-            <p>Nmae</p>
+            <p>Name</p>
             <p>Email Id</p>
           </div>
            <div className="flex items-center justify-between text-[#202224] md:gap-30 gap-20 font-bold text-[1rem]">
             <p>Level</p>
-            <p>Ammount</p>
+            <p>Amount</p>
           </div>
            <div className="flex items-center justify-end text-[#202224] md:gap-30 gap-20 font-bold text-[1rem]">
             <p>Status</p>

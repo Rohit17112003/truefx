@@ -1,7 +1,7 @@
 const StatContainer = ({ index, icon, title, value }) => {
   return (
    <>
-     <div className="inset-shadow-lg space-y-1 rounded-lg bg-[#F9FAFB] py-2 px-4 shadow-lg inset-shadow-sm shadow-[#E3E3E3] inset-shadow-gray-400 h-32 w-full flex flex-col justify-between">
+     <div className="inset-shadow-lg space-y-1 rounded-lg bg-[#F9FAFB] md:py-2 py-10 md:px-4 px-10 shadow-lg inset-shadow-sm shadow-[#E3E3E3] inset-shadow-gray-400 md:h-32 h-56 w-full flex flex-col justify-between">
       <h2 className="flex items-center gap-3">
         <span>
           <i

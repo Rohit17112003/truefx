@@ -47,7 +47,7 @@ const Investment = () => {
               <p>Transacted</p>
             </div>
             <div className="flex items-center justify-between gap-14 text-[1rem] font-bold text-[#202224] md:gap-28">
-              <p>Ammount</p>
+              <p>Amount</p>
               <p>Post Balance</p>
             </div>
             <div className="flex items-center justify-between gap-14 text-[1rem] font-bold text-[#202224] md:gap-28">

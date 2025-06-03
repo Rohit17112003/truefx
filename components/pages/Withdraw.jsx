@@ -39,7 +39,7 @@ const Withdraw = () => {
             <p>Initiated</p>
           </div>
            <div className="flex items-center justify-between text-[#202224] md:gap-20 gap-10  font-bold text-[1rem]">
-            <p>Ammount</p>
+            <p>Amount</p>
             <p>Conversion</p>
           </div>
            <div className="flex items-center justify-between text-[#202224] md:gap-20 gap-10  font-bold text-[1rem]">
