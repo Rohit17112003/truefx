@@ -1,0 +1,67 @@
+{
+  "navigation": [
+    {
+      "icon": "ri-home-8-line",
+      "route": "/",
+      "label": "dashboard"
+    },
+    {
+      "icon": "ri-angularjs-line",
+      "route": "/kyc",
+      "label": "KYC"
+    },
+    {
+      "icon": "ri-inbox-archive-line",
+      "route": "/profile",
+      "label": "Profile"
+    },
+    {
+      "icon": "ri-folder-open-line",
+      "route": "/addfund",
+      "label": "Add Fund"
+    },
+    {
+      "icon": "ri-folder-open-line",
+      "route": "/withdraw",
+      "label": "Withdraw"
+    },
+    {
+      "icon": "ri-list-check-3",
+      "route": "/investment",
+      "label": "Investment Tracking"
+    },
+    {
+      "icon": "ri-money-dollar-box-line",
+      "route": "/referral",
+      "label": "Referal Income"
+    }
+    
+  ],
+  "stats": [
+    {
+      "icon": "ri-money-dollar-circle-line",
+      "title": "$20,000",
+      "value": "Total Balance"
+    },
+    {
+      "icon": "ri-folder-2-line",
+      "title": "$85,000",
+      "value": "Wallet Balance"
+    },
+    {
+      "icon": "ri-hand-coin-line",
+      "title": "$3200",
+      "value": "Today’s Referral commision"
+    },
+    {
+      "icon": "ri-shield-check-line",
+      "title": "Verified",
+      "value": "Document Status"
+    },
+    {
+      "icon": "ri-group-line",
+      "title": "294",
+      "value": "Your Downline"
+    }
+  ]
+}
