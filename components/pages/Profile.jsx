@@ -115,7 +115,7 @@ export default function Profile() {
             <img
               src="/image/qrcode.svg"
               alt="qrcode"
-              className="h-full w-full md:h-38 md:w-40"
+              className="h-56 w-56 md:h-38 md:w-40"
             />
             <label className="w-[300px] text-[1.1rem] text-[#0C1421] md:-ml-24.5">
               Referral Link
