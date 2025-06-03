@@ -6,7 +6,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
       <div className="flex items-center gap-4 sm:gap-0">
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="outline-none md:hidden"
+          className="outline-none md:hidden text-[1.3rem]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
         <img
               src="/image/Frame.svg"
               alt="user"
-              className="h-10 w-10 "
+              className="md:h-10 h-7 md:w-10 w-7 "
             />
           </span>
 
@@ -44,16 +44,16 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
             <img
               src="/image/bell.svg"
               alt="user"
-              className="h-10 w-10 "
+              className="md:h-10 h-8 md:w-10 w-8 "
             />
           </span>
           <Link href="/profile">
             <div className="flex aspect-square h-12 w-28 items-center justify-center gap-2">
-              <h1 className="leading-5 font-bold .poppins semibold text-center">Mr Rohit Rana</h1>
+              <h1 className="md:leading-5 font-bold .poppins semibold text-center text-[0.8rem] leading-4 ">Mr Rohit Rana</h1>
               <img
                 src="/image/image 6.svg"
                 alt="user"
-                className="h-10 w-10 rounded-full"
+                className="md:h-10 h-9 md:w-10 w-9 rounded-full"
               />
             </div>
           </Link>
