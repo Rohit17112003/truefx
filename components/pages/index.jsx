@@ -39,7 +39,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
             More the people you refer, more you earn.
           </p>
           <span className="text-[0.9rem] font-semibold text-black">
-            <select className="w-full rounded-2xl bg-[#fff] px-4 py-2 text-[0.9rem] outline-none">
+            <select className="w-full rounded-2xl bg-[#fff] px-4 py-2.5 text-[0.9rem] outline-none">
               <option value="">STP</option>
               <option value="Aadhar">Segmentation</option>
               <option value="PAN">Targeting</option>
