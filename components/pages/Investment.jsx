@@ -4,18 +4,18 @@ const Investment = () => {
   return (
     <>
       <div className="mt-4 rounded-lg border-2 border-[#b9b9b915] bg-[#FCFDFD] py-6 ring ring-[#fcfdfdb5] md:mx-4">
-        <div className="flex w-full flex-row justify-between gap-5 px-5 md:items-end md:gap-20">
-          <div className="items-center md:flex">
-            <span className="text-[0.9rem] font-semibold text-black">
+        <div className="flex w-full flex-row justify-between gap-5 px-5 md:items-end items-center  md:gap-20">
+          <div className="items-center grid md:grid-cols-2 grid-cols-1 gap-3">
+            <span className="text-[0.9rem] font-semibold text-black ">
               <label>Transaction Number</label>
               <input
                 className="w-full rounded-md border border-[#D5D5D5] bg-[#F5F6FA] px-4 py-2 text-[0.9rem] outline-none md:h-10.5 md:w-[350px]"
                 placeholder="76489372645"
               />
             </span>
-            <span className="text-[0.9rem] font-semibold text-black">
+            <span className="text-[0.9rem] font-semibold text-black ">
               <label>Type</label>
-              <select className="w-full rounded-md border border-[#D5D5D5] bg-[#F5F6FA] px-4 py-2 text-[0.9rem] outline-none md:h-10.5 md:w-[350px]">
+              <select className="w-full rounded-md border border-[#D5D5D5] bg-[#F5F6FA] px-4 py-2.5 text-[0.9rem] outline-none md:h-10.5 md:w-[350px]">
                 <option value="">All</option>
                 <option value="Aadhar">Aadhar</option>
                 <option value="PAN">PAN</option>

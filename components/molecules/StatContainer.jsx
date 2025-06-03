@@ -14,7 +14,7 @@ const StatContainer = ({ index, icon, title, value }) => {
           <p className="text-[0.8rem] leading-4 text-[#4B4949] font-[500]">{value}</p>
         </div>
       </h2>
-      <button  className={` text-[0.95rem]  ${index === 0 ? "" : index === 1 ? "" : index === 2 ? "hidden" : index === 3 ? "hidden" : "hidden"} rounded-md  px-8 text-[#0095FF] bg-[#fff] shadow-lg shadow-[#E3E3E3] mt-5 font-[500] py-0.5`}>Deposit Now! <span><i className="ri-arrow-right-long-line"></i></span></button>
+      <button  className={` text-[0.95rem]  ${index === 0 ? "" : index === 1 ? "" : index === 2 ? "hidden" : index === 3 ? "hidden" : "hidden"} rounded-md  px-8 text-[#0095FF] bg-[#fff] shadow-lg shadow-[#E3E3E3] mt-5 font-[500] md:py-0.5 py-2`}>Deposit Now! <span><i className="ri-arrow-right-long-line"></i></span></button>
     </div>
    </>
   );
