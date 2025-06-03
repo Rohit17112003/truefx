@@ -41,10 +41,10 @@ const inputRef = useRef(null); // ✅ Define inputRef here
           <span className="text-[0.9rem] font-semibold text-black">
             <select className="w-full rounded-2xl bg-[#fff] px-4 py-2 text-[0.9rem] outline-none">
               <option value="">STP</option>
-              <option value="Aadhar">Aadhar</option>
-              <option value="PAN">PAN</option>
-              <option value="VoterID">Voter ID</option>
-              <option value="Passport">Passport</option>
+              <option value="Aadhar">Segmentation</option>
+              <option value="PAN">Targeting</option>
+              <option value="VoterID">Positioning</option>
+              <option value="Passport">All of the above</option>
             </select>
           </span>
           <p className="mt-3 py-2 text-[0.85rem] font-semibold text-[#727e8c]">
