@@ -1,10 +1,18 @@
-import React from 'react'
+"use client";
+import { useRouter } from "next/navigation";
 
 const Withdraw = () => {
+  const router = useRouter();
+
+
+    const handleWithrawClick = () => {
+    router.push("/withdraw-form"); // 👈 change to your actual route
+  };
+
   return (
     <>
       <div className="flex justify-end px-4">
-        <button className="rounded-md bg-[#2CB24B] px-4 py-2 text-[1.2rem] font-bold text-white">
+        <button  onClick={handleWithrawClick} className="rounded-md bg-[#2CB24B] px-4 py-2 text-[1.2rem] font-bold text-white">
           Withdraw
         </button>
       </div>

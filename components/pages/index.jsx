@@ -90,7 +90,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               <div className="flex justify-between rounded-[10px] bg-[#e4e4f27f] px-6 py-1.5 text-[0.8rem] font-bold tracking-wide text-[#000000c8]">
                 <p>16503</p>
                 <p>0</p>
-                <p>MT4</p>
+                <p>MT5</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                  MT4 Tarminal
+                  MT5 Tarminal
                 </button>
                   <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2">
                  <img
@@ -123,7 +123,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                 MT4 Mobile Android
+                 MT5 Mobile Android
                 </button>
               
               </div>
@@ -133,7 +133,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                MT4 Mobile iOS
+                MT5 Mobile iOS
                 </button>
             </div>
           </div>
