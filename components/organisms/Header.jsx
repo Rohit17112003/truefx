@@ -128,18 +128,20 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
           </span>
 
           {/* 👤 Profile */}
-          <Link href="/profile">
+          
             <div className="flex aspect-square h-12 w-28 items-center justify-center gap-2">
               <h1 className="text-center text-[0.8rem] leading-4 font-bold md:leading-5 dark:text-white">
                 Mr Rohit Rana
               </h1>
+              <Link href="/profile">
               <img
                 src="/image/image 6.svg"
                 alt="user"
                 className="h-9 w-9 rounded-full md:h-10 md:w-10"
               />
+              </Link>
             </div>
-          </Link>
+          
         </div>
       </div>
     </header>
