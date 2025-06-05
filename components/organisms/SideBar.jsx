@@ -23,7 +23,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
         <div className="flex px-4">
           {
             <Link href="/">
-              <h1 className="text-4xl font-bold">LOGO</h1>
+              <h1 className="text-4xl font-bold text-black">LOGO</h1>
             </Link>
           }
         </div>

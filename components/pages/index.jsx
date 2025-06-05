@@ -115,7 +115,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                 <a href="#" className=" hover:text-[#0077B6]"> MT5 Tarminal</a>
+                 <a href="https://www.metatrader5.com/en" className=" hover:text-[#0077B6]"> MT5 Tarminal</a>
                 </button>
                   <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2">
                  <img
@@ -123,7 +123,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                <a href="#" className=" hover:text-[#0077B6]"> MT5 Mobile Android</a>
+                <a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5&hl=en&referrer=ref_id%3d5189150792679739782%26utm_source%3dwww.metatrader5.com%26utm_campaign%3dinstall.metaquotes" className=" hover:text-[#0077B6]"> MT5 Mobile Android</a>
                 </button>
               
               </div>
@@ -133,7 +133,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-              <a href="#" className=" hover:text-[#0077B6]">  MT5 Mobile iOS</a>
+              <a href="https://apps.apple.com/us/app/metatrader-5/id413251709?utm_campaign=install.metaquotes&utm_source=www.metatrader5.com" className=" hover:text-[#0077B6]">  MT5 Mobile iOS</a>
                 </button>
             </div>
           </div>
