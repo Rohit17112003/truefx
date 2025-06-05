@@ -115,7 +115,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                  MT5 Tarminal
+                 <a href="#" className=" hover:text-[#0077B6]"> MT5 Tarminal</a>
                 </button>
                   <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2">
                  <img
@@ -123,7 +123,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                 MT5 Mobile Android
+                <a href="#" className=" hover:text-[#0077B6]"> MT5 Mobile Android</a>
                 </button>
               
               </div>
@@ -133,7 +133,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               alt="user"
               className=" h-5.5 w-5.5"
             />
-                MT5 Mobile iOS
+              <a href="#" className=" hover:text-[#0077B6]">  MT5 Mobile iOS</a>
                 </button>
             </div>
           </div>

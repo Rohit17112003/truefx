@@ -56,11 +56,11 @@ const Investment = () => {
             </div>
           </div>
         </div>
-        <h1 className="pt-32 text-center text-[1.9rem] font-bold text-[#000]">
+        <h1 className="pt-32 text-center md:text-[1.9rem] text-[1.2rem] font-bold text-[#000]">
           Coming Soon
         </h1>
 
-        <h1 className="pb-32 text-center text-[1.5rem] font-bold text-[#00000043]">
+        <h1 className="pb-32 text-center md:text-[1.5rem] text-[1.1rem] font-bold text-[#00000043]">
           No Invest History Found
         </h1>
       </div>

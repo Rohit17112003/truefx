@@ -25,7 +25,7 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
         </button>
         <Link href="#" className="text-gray-800">
           <h1 className="text-xl font-bold text-nowrap capitalize">
-            {/* {pageTitle} */}
+            {pageTitle}
           </h1>
         </Link>
       </div>
@@ -40,12 +40,10 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
             />
           </span>
 
-          <span>
-            <img
-              src="/image/bell.svg"
-              alt="user"
-              className="md:h-10 h-8 md:w-10 w-8 "
-            />
+          <span className="md:text-[1.4rem] text-[1.2rem] mt-3">
+          <i className="ri-notification-2-fill relative">
+            <p className="bg-[#c52323] items-center text-center mukta-extralight md:text-[0.9rem] text-[0.81rem] absolute rounded-full text-white md:h-5.5 h-4.5 md:w-5.5 w-4.5 md:-mt-10 -mt-8.5 md:ml-3 ml-2.5">2</p>
+          </i>
           </span>
           <Link href="/profile">
             <div className="flex aspect-square h-12 w-28 items-center justify-center gap-2">

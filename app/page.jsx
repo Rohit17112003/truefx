@@ -3,7 +3,7 @@ import MainLayout from "@/components/templates/MainLayout";
 
 export default function Home() {
   return (
-    <MainLayout pageTitle={"Hi Vedant 👋"}>
+    <MainLayout pageTitle={"Hi Rohit 👋"}>
       <HomePage />
     </MainLayout>
   );

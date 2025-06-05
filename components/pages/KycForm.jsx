@@ -40,8 +40,8 @@ const KycForm = () => {
                 required
               >
                 <option>UPI</option>
-                <option>googlePay</option>
-                <option>phonePay</option>
+                <option>GPay</option>
+                <option>PhonePe</option>
                 <option>paytm</option>
                 <option>bhim</option>
                 <option>amazonPay</option>

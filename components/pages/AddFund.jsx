@@ -12,14 +12,14 @@ const AddFund = () => {
       <div className="flex justify-end px-4">
         <button
           onClick={handleAddFundClick}
-          className="rounded-md bg-[#2CB24B] px-4 py-2 text-[1.2rem] font-bold text-white"
+          className="rounded-md bg-[#2CB24B] px-4 py-2 md:text-[1.2rem] text-[1rem] font-bold text-white"
         >
           Add Fund
         </button>
       </div>
       <div className="mt-4 rounded-lg border-2 border-[#b9b9b915] bg-[#FCFDFD] py-6 ring ring-[#fcfdfd50] md:mx-4">
-        <div className="flex w-full flex-row items-center justify-between px-5">
-          <span className="flex w-[250px] items-center gap-2 rounded-4xl border border-[#D5D5D5] bg-[#F5F6FA] px-4 text-[0.9rem] md:h-10.5 md:w-[350px]">
+        <div className="flex w-full flex-row items-center justify-between px-4">
+          <span className="flex w-[250px] items-center rounded-4xl border border-[#D5D5D5] bg-[#F5F6FA] px-2 text-[0.9rem] md:h-10.5 md:w-[350px]">
             {" "}
             <i className="ri-search-line text-[1.1rem] text-[#00000069]"></i>
             <input
@@ -56,7 +56,7 @@ const AddFund = () => {
             </div>
           </div>
         </div>
-        <h1 className="py-32 text-center text-[1.5rem] font-bold text-[#00000043]">
+        <h1 className="py-32 text-center md:text-[1.5rem] text-[1.1rem] font-bold text-[#00000043]">
           No Invest History Found
         </h1>
       </div>

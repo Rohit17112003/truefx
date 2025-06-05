@@ -56,7 +56,7 @@ const Withdraw = () => {
           </div>
         </div>
        </div>
-        <h1 className="text-[1.5rem] font-bold text-[#00000043] text-center py-32">No Withdraw History Found</h1>
+        <h1 className="md:text-[1.5rem] text-[1.1rem] font-bold text-[#00000043] text-center py-32">No Withdraw History Found</h1>
       </div>
     </>
   )
