@@ -1,11 +1,12 @@
 import React from 'react'
 import KycForm from '@/components/pages/KycForm'
+import MainLayout from '@/components/templates/MainLayout'
 
 const page = () => {
   return (
-    <div>
+    <MainLayout pageTitle={"Hi Rohit 👋"}>
    <KycForm/>
-    </div>
+    </MainLayout>
   )
 }
 

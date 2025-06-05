@@ -4,7 +4,7 @@ import MainLayout from '@/components/templates/MainLayout'
 
 const page = () => {
   return (
-    <MainLayout>
+    <MainLayout pageTitle={"Hi Rohit 👋"}>
       <WithdrawForm/>
     </MainLayout>
   )
