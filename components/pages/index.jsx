@@ -1,17 +1,17 @@
-"use client"
+"use client";
 import StatContainer from "../molecules/StatContainer";
 import data from "@/public/database/nav.json";
-import { useRef, useState } from 'react';
+import { useRef, useState } from "react";
 
 const HomePage = () => {
-
-const inputRef = useRef(null); // ✅ Define inputRef here
+  const inputRef = useRef(null); // ✅ Define inputRef here
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
     const defaultValue = inputRef.current?.defaultValue;
     if (defaultValue) {
-      navigator.clipboard.writeText(defaultValue)
+      navigator.clipboard
+        .writeText(defaultValue)
         .then(() => {
           setCopied(true);
           setTimeout(() => setCopied(false), 1500);
@@ -29,7 +29,7 @@ const inputRef = useRef(null); // ✅ Define inputRef here
         ))}
       </section>
 
-      <div className="grid md:grid-cols-2 items-center gap-4 pb-10">
+      <div className="grid items-center gap-4 pb-10 md:grid-cols-2">
         <div className="rounded-lg bg-[#f7f7f8] px-5">
           <h1 className="pt-8 text-[1rem] font-semibold text-[#000000ed]">
             REFERRAL PROGRAM
@@ -54,20 +54,25 @@ const inputRef = useRef(null); // ✅ Define inputRef here
             <a href="">
               {" "}
               <input
-               ref={inputRef}
+                ref={inputRef}
                 type="text"
-               defaultValue="https://login.fcxtrade.com/affiliates/en/1/118494065"
-                className="md:w-[350px] py-1.5 pl-4 text-[0.9rem] outline-0"
+                defaultValue="https://login.fcxtrade.com/affiliates/en/1/118494065"
+                className="py-1.5 pl-4 text-[0.9rem] outline-0 md:w-[350px]"
                 required
               />
             </a>
-            <span className="h-full rounded-r-2xl bg-[#0077B6] px-2.5 py-1 text-2xl text-white  cursor-pointer relative" onClick={handleCopy} >
+            <span
+              className="relative h-full cursor-pointer rounded-r-2xl bg-[#0077B6] px-2.5 py-1 text-2xl text-white"
+              onClick={handleCopy}
+            >
               <i className="ri-file-copy-fill"></i>
-              {copied && <p className="text-pink-400 -ml-2 mt-1 text-[0.8rem] absolute">Copied</p>}
-
+              {copied && (
+                <p className="absolute mt-1 -ml-2 text-[0.8rem] text-pink-400">
+                  Copied
+                </p>
+              )}
             </span>
           </div>{" "}
-
           <div className="flex justify-center pb-12">
             <img
               src="/image/download.png"
@@ -103,38 +108,55 @@ const inputRef = useRef(null); // ✅ Define inputRef here
               <h1 className="pt-2 text-[1rem] font-bold text-[#727e8cd0]">
                 Metatrader and Apps
               </h1>
-              <p className="text-[0.8rem] font-semibold text-[#727e8caa] pb-2">
+              <p className="pb-2 text-[0.8rem] font-semibold text-[#727e8caa]">
                 Download MetaTrader plugins & Apps for PC, web browsers,
                 smartphones, and tablets
               </p>
 
               <div className="flex gap-3">
-                <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2">
-                 <img
-              src="/image/metatrader-4.svg"
-              alt="user"
-              className=" h-5.5 w-5.5"
-            />
-                 <a href="https://www.metatrader5.com/en" className=" hover:text-[#0077B6]"> MT5 Tarminal</a>
+                <button className="flex items-center gap-2 rounded-lg bg-[#f7f7f8] px-3 py-3 text-[0.85rem] font-semibold text-[#000000b4] underline">
+                  <img
+                    src="/image/metatrader-4.svg"
+                    alt="user"
+                    className="h-5.5 w-5.5"
+                  />
+                  <a
+                    href="https://www.metatrader5.com/en"
+                    className="hover:text-[#0077B6]"
+                  >
+                    {" "}
+                    MT5 Tarminal
+                  </a>
                 </button>
-                  <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2">
-                 <img
-              src="/image/andriod.svg"
-              alt="user"
-              className=" h-5.5 w-5.5"
-            />
-                <a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5&hl=en&referrer=ref_id%3d5189150792679739782%26utm_source%3dwww.metatrader5.com%26utm_campaign%3dinstall.metaquotes" className=" hover:text-[#0077B6]"> MT5 Mobile Android</a>
+                <button className="flex items-center gap-2 rounded-lg bg-[#f7f7f8] px-3 py-3 text-[0.85rem] font-semibold text-[#000000b4] underline">
+                  <img
+                    src="/image/andriod.svg"
+                    alt="user"
+                    className="h-5.5 w-5.5"
+                  />
+                  <a
+                    href="https://www.metatrader5.com/en/mobile-trading/android"
+                    className="hover:text-[#0077B6]"
+                  >
+                    {" "}
+                    MT5 Mobile Android
+                  </a>
                 </button>
-              
               </div>
-                  <button className="rounded-lg bg-[#f7f7f8] px-3 py-3 text-[#000000b4] underline font-semibold text-[0.85rem] flex items-center gap-2 mt-3">
-                 <img
-              src="/image/apple.svg"
-              alt="user"
-              className=" h-5.5 w-5.5"
-            />
-              <a href="https://apps.apple.com/us/app/metatrader-5/id413251709?utm_campaign=install.metaquotes&utm_source=www.metatrader5.com" className=" hover:text-[#0077B6]">  MT5 Mobile iOS</a>
-                </button>
+              <button className="mt-3 flex items-center gap-2 rounded-lg bg-[#f7f7f8] px-3 py-3 text-[0.85rem] font-semibold text-[#000000b4] underline">
+                <img
+                  src="/image/apple.svg"
+                  alt="user"
+                  className="h-5.5 w-5.5"
+                />
+                <a
+                  href="https://www.metatrader5.com/en/mobile-trading/iphone"
+                  className="hover:text-[#0077B6]"
+                >
+                  {" "}
+                  MT5 Mobile iOS
+                </a>
+              </button>
             </div>
           </div>
         </div>
