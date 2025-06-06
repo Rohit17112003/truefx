@@ -22,17 +22,17 @@ export default function Profile() {
 
   return (
     <>
-      <div className="flex items-center justify-between rounded-lg bg-blue-100 px-3 py-2 md:px-6 md:py-4">
-        <h1 className="text-xl font-semibold text-black">Ankush Kumar</h1>
+      <div className="flex items-center justify-between rounded-lg bg-[var(--color-primarys)] px-3 py-2 md:px-6 md:py-4">
+        <h1 className="text-xl font-semibold text-[var(--color-text)]">Ankush Kumar</h1>
         <div className="text-0.7rem space-x-2 font-semibold md:text-[1rem]">
-          <button className="rounded bg-red-500 px-2 py-0.5 text-white hover:bg-red-600 md:px-4 md:py-2">
-            Delete{" "}
+          <button className="rounded bg-[var(--color-red)] px-2 py-0.5 text-white cursor-pointer hover:bg-red-600 md:px-4 md:py-2">
+            Delete
             <span>
               <i className="ri-delete-bin-6-line"></i>
             </span>
           </button>
-          <button className="rounded bg-green-500 px-2 py-0.5 text-white hover:bg-green-600 md:px-4 md:py-2">
-            Edit{" "}
+          <button className="rounded bg-[var(--color-red)] px-2 py-0.5 text-white cursor-pointer hover:bg-green-600 md:px-4 md:py-2">
+            Edit
             <span>
               <i className="ri-pencil-fill"></i>
             </span>
@@ -40,11 +40,11 @@ export default function Profile() {
         </div>
       </div>
 
-      <div className="mt-5 mb-20 flex flex-col items-center rounded-lg bg-[#F9FAFB] md:mt-7">
+      <div className="mt-5 mb-20 flex flex-col items-center rounded-lg bg-[var(--color-referralbg)] md:mt-7">
         <img src="/image/user.svg" alt="user" className="mt-7 h-28 w-28" />
 
         <div className="mt-5 gap-3 md:flex">
-          <form className="flex w-[350px] flex-col gap-3 text-black md:w-[400px]">
+          <form className="flex w-[350px] flex-col gap-3 text-[var(--color-text)] md:w-[400px]">
             <div className="flex w-full items-center gap-4 rounded-md border-1 border-[#D1D5DB] px-3 py-1.5 ring ring-[#d1d5db58]">
               <span className="text-2xl text-[#0077B6]">
                 <i className="ri-group-fill"></i>
@@ -117,7 +117,7 @@ export default function Profile() {
               alt="qrcode"
               className="h-56 w-56 md:h-38 md:w-40"
             />
-            <label className="w-[300px] text-[1.1rem] text-[#0C1421] md:-ml-24.5">
+            <label className="w-[300px] text-[1.1rem] text-[var(--color-text)] md:-ml-24.5">
               Referral Link
             </label>
             <div className="-mt-2 flex w-full items-center justify-between gap-4 rounded-md border-1 border-[#D1D5DB] ring ring-[#d1d5db58]">
@@ -131,7 +131,7 @@ export default function Profile() {
                   required
                 />
               </a>
-              <span className="text-2xl px-2.5 py-1.5 h-full rounded-r-md bg-[#0077B6] text-white relative cursor-pointer" onClick={handleCopy}>
+              <span className="text-2xl px-2.5 py-1.5 h-full rounded-r-md  bg-[var(--color-primary)]  text-[var(--color-copy)] relative cursor-pointer" onClick={handleCopy}>
                <i className="ri-file-copy-fill"></i>
               {copied && <p className="text-pink-400  -ml-2 mt-1 text-[0.8rem] absolute">Copied</p>}
 
@@ -158,7 +158,7 @@ export default function Profile() {
           </form>
         </div>
        <form>
-         <button type='submit' className="mt-7 mb-7 rounded-lg bg-[#0070BA] px-20 py-2 text-[1.2rem] text-white cursor-pointer">
+         <button type='submit' className="mt-7 mb-7 rounded-lg  px-20 py-2 text-[1.2rem] text-white cursor-pointer  bg-[var(--color-primary)]">
           Save
         </button>
        </form>

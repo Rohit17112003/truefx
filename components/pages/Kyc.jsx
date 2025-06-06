@@ -28,8 +28,8 @@ export default function Kyc() {
 
   return (
     <>
-      <h2 className="text-3xl font-bold text-center mb-6 text-[#4D4D4D]">KYC</h2>
-      <div className="max-w-md mx-auto mt-10 bg-[#F9FAFB] py-7 px-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold text-center mb-6 text-[var(--color-text)]">KYC</h2>
+      <div className="max-w-md mx-auto mt-10 bg-[var(--color-header)] py-7 px-6 rounded-lg shadow-md">
         <form>
           <div className="mb-4">
             <label className="block mb-1 font-medium">Document type</label>

@@ -25,8 +25,8 @@ const KycForm = () => {
   };
   return (
     <div className="flex w-full justify-center px-4 py-5">
-      <div className="w-full rounded-md shadow-md shadow-gray-500 md:w-1/3">
-        <h1 className="text-center text-[1.3rem] font-bold text-[#000]">
+      <div className="w-full rounded-md shadow-md shadow-gray-500 bg-[var(--color-header)] md:w-1/3">
+        <h1 className="text-center text-[1.3rem] font-bold text-[var(--color-text)]">
           Pay $100
         </h1>
         <div className="mx-auto max-w-md px-6 py-7 shadow-md">
@@ -34,7 +34,7 @@ const KycForm = () => {
             <div className="mb-4">
               <label className="mb-1 block font-medium">Pay Via</label>
               <select
-                className="w-full rounded-md border-2 border-[#D1D5DB] px-3 py-2 text-[1.1rem] text-[#000] outline-0"
+                className="w-full rounded-md border-2 border-[#D1D5DB] px-3 py-2 text-[1.1rem] text-[var(--color-text)] outline-0"
                 value={docType}
                 onChange={(e) => setDocType(e.target.value)}
                 required

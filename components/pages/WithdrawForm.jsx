@@ -28,13 +28,13 @@ export default function WithdrawForm() {
 
   return (
     <>
-      <div className='md:mt-5 md:px-26'>
-        <form>
+      <div className='md:mt-3 md:px-20'>
+        <form className='py-3 px-4 bg-[var(--color-header)] rounded-lg'>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-3'>
             <div className="mb-4">
               <label className="block mb-1 font-medium">Payment Method</label>
               <select
-                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#000] bg-[#d1d4dd46] text-[1.1rem]"
+                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9ca3af] bg-[var(--color-bg)] text-[1.1rem]"
                 onChange={(e) => setDocType(e.target.value)}
                 value={docType}
                 required
@@ -54,7 +54,7 @@ export default function WithdrawForm() {
                 placeholder="Enter Number"
                 onChange={(e) => setDocNumber(e.target.value)}
                 value={docNumber}
-                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
                 required
               />
             </div>
@@ -65,8 +65,8 @@ export default function WithdrawForm() {
                 type="text"
                 placeholder="2000"
                 onChange={(e) => setAmount(e.target.value)}
-                value={amount}
-                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+                value={amount} 
+                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
                 required
               />
             </div>
@@ -77,7 +77,7 @@ export default function WithdrawForm() {
                 type="date"
                 onChange={(e) => setDate(e.target.value)}
                 value={date}
-                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
                 required
               />
             </div>
@@ -88,7 +88,7 @@ export default function WithdrawForm() {
                 placeholder="Recommendations for Training Providers"
                 onChange={(e) => setReason(e.target.value)}
                 value={reason}
-                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+                className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
                 required
               />
             </div>
@@ -129,7 +129,7 @@ export default function WithdrawForm() {
                   setReason('');
                   setFile(null);
                 }}
-                className="bg-gray-100 text-black py-2 px-6 rounded-lg hover:bg-gray-200 border border-[#D1D5DB]"
+                className="bg-gray-100 text-black py-2 px-6 rounded-lg hover:bg-gray-500 border border-[#D1D5DB] cursor-pointer"
               >
                 Cancel
               </button>
@@ -137,7 +137,7 @@ export default function WithdrawForm() {
               <button
                 type="submit"
                 onClick={handleProceed}
-                className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600"
+                className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-400"
               >
                 Withdraw
               </button>

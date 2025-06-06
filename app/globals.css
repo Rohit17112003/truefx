@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 @import "tailwindcss";
@@ -34,4 +34,84 @@
     display: none;
   }
 
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+/* Light mode (default) */
+:root {
+  --color-bg: #ffffff;
+  --color-red: #df0404e4;
+  --color-green: #4CAF50;
+  --color-accountbg:#e4e4f27f;
+  --color-referralbg: #f7f7f8;
+  --color-copy: #fff;
+  --color-text: #000000;
+  --color-texts: #000000;
+  --color-header: #f9fafb;
+  --color-primary: #0078d4f1;
+  --color-primarys:rgba(3, 119, 207, 0.27);
+  --color-secondary: #4d525f;
+  --color-secondarys: #412b2b;
+  --color-tertiary: #3d48b7;
+}
+
+/* Dark mode override */
+.dark {
+  --color-bg: #121212a1;
+  --color-red: #000;
+  --color-texts: #030100;
+  --color-green: #252c2ef8;
+  --color-accountbg:#4f4f527f;
+  --color-referralbg: #262627;
+  --color-copy: #3f1f1ff8;
+  --color-text: #ded6d6;
+  --color-header: #3e3f3f;
+  --color-primary: #0681fb;
+  --color-primarys: #1f2020;
+  --color-secondary: #888888;
+  --color-secondarys: #5e3b3b;
+  --color-tertiary: #7c83ff;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Mukta", sans-serif;
+}
+
+/* Font utility classes */
+.mukta-extralight {
+  font-family: "Mukta", sans-serif;
+  font-weight: 700;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+
+.poppinssemibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .container-bg {
+    @apply rounded-xl bg-white shadow dark:bg-[#1e1e1e];
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
 }

@@ -12,51 +12,46 @@ const AddFund = () => {
       <div className="flex justify-end px-4">
         <button
           onClick={handleAddFundClick}
-          className="rounded-md bg-[#2CB24B] px-4 py-2 md:text-[1.2rem] text-[1rem] font-bold text-white"
+          className="rounded-md  bg-[var(--color-green)] px-4 py-2 md:text-[1.2rem] text-[1rem] font-bold text-white cursor-pointer"
         >
           Add Fund
         </button>
       </div>
-      <div className="mt-4 rounded-lg border-2 border-[#b9b9b915] bg-[#FCFDFD] py-6 ring ring-[#fcfdfd50] md:mx-4">
+      <div className="mt-4 rounded-lg border-2 border-[#b9b9b915]  bg-[var(--color-header)] py-6 ring ring-[#fcfdfd50] md:mx-4">
         <div className="flex w-full flex-row items-center justify-between px-4">
-          <span className="flex w-[250px] items-center rounded-4xl border border-[#D5D5D5] bg-[#F5F6FA] px-2 text-[0.9rem] md:h-10.5 md:w-[350px]">
+          <span className="flex w-[250px] items-center rounded-4xl border border-[#D5D5D5]  bg-[var(--color-bg)] px-2 text-[0.9rem] md:h-10.5 md:w-[350px]">
             {" "}
-            <i className="ri-search-line text-[1.1rem] text-[#00000069]"></i>
+            <i className="ri-search-line text-[1.1rem]  text-[var(--color-secondary)]"></i>
             <input
               className="w-full py-2 outline-none"
               placeholder="Search here...."
             />
           </span>
-          <p className="flex items-center gap-1 text-[1.1rem] text-[#20222496]">
-            <span>
-              {" "}
-              <img
-                src="/image/filter.svg"
-                alt="qrcode"
-                className="h-6 w-6 text-black"
-              />
+          <p className="flex items-center gap-1 text-[1.1rem]  text-[var(--color-text)]">
+            <span className="text-[1.2rem] md:text-[1.5rem]">
+                         <i className="ri-filter-line"></i>
             </span>
             Filter
           </p>
         </div>
 
         <div className="overflow-x-scroll md:overflow-x-hidden md:pr-8.5">
-          <div className="mx-4 mt-8 flex w-[650px] justify-between rounded-xl bg-[#F1F4F9] px-5 py-3 ring ring-[#fcfdfd50] md:w-full">
-            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold text-[#202224] md:gap-24">
+          <div className="mx-4 mt-8 flex w-[650px] justify-between rounded-xl bg-[var(--color-referralbg)] px-5 py-3  md:w-full">
+            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold  text-[var(--color-text)] md:gap-24">
               <p>Investment Plan</p>
               <p>Return</p>
             </div>
-            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold text-[#202224] md:gap-24">
+            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold  text-[var(--color-text)] md:gap-24">
               <p>Received</p>
               <p>Next Payment</p>
             </div>
-            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold text-[#202224] md:gap-24">
+            <div className="flex items-center justify-between gap-12 text-[1rem] font-bold  text-[var(--color-text)] md:gap-24">
               <p>Action</p>
               <p>Status</p>
             </div>
           </div>
         </div>
-        <h1 className="py-32 text-center md:text-[1.5rem] text-[1.1rem] font-bold text-[#00000043]">
+        <h1 className="py-32 text-center md:text-[1.5rem] text-[1.1rem] font-bold text-[var(--color-text)]">
           No Invest History Found
         </h1>
       </div>

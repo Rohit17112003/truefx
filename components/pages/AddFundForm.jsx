@@ -28,13 +28,13 @@ export default function AddFundForm() {
 
   return (
     <>
-      <div className='md:mt-5 md:px-26'>
-        <form>
+      <div className='md:mt-3 md:px-20'>
+        <form className='bg-[var(--color-header)] rounded-lg px-4 py-2'>
           <div className='grid md:grid-cols-2 grid-cols-1 gap-3'>
             <div className="mb-4">
             <label className="block mb-1 font-medium">Pay Via</label>
             <select
-              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#000] bg-[#d1d4dd46] text-[1.1rem]"
+              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[var(--color-text)] bg-[var(--color-bg)] text-[1.1rem]"
               onChange={(e) => setDocType(e.target.value)}
               required
             >
@@ -52,7 +52,7 @@ export default function AddFundForm() {
               type="text"
               placeholder="90000"
               onChange={(e) => setDocNumber(e.target.value)}
-              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
               required
             />
           </div>
@@ -62,7 +62,7 @@ export default function AddFundForm() {
               type="text"
               placeholder="817639836619"
               onChange={(e) => setDocNumber(e.target.value)}
-              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
               required
             />
           </div>
@@ -73,7 +73,7 @@ export default function AddFundForm() {
               placeholder="817639836619"
               value={docNumber}
               onChange={(e) => setDocNumber(e.target.value)}
-              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF]"
+              className="w-full border-2 border-[#D1D5DB] rounded-md outline-0 px-3 py-2 text-[#9CA3AF] bg-[var(--color-bg)]"
               required
             />
           </div>
@@ -111,7 +111,7 @@ export default function AddFundForm() {
                 setDocNumber('');
                 setFile(null);
               }}
-              className="bg-gray-100 text-black py-2 px-6 rounded-lg hover:bg-gray-200 border border-[#D1D5DB]"
+              className="text-[var(--color-texts)] bg-[var(--color-header)] py-2 px-6 rounded-lg hover:bg-gray-200 border border-[#D1D5DB]"
             >
               Cancel
             </button>
@@ -119,7 +119,7 @@ export default function AddFundForm() {
             <button
               type="submit"
               onClick={handleProceed}
-              className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600"
+              className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-600"
             >
              Invest
             </button>
