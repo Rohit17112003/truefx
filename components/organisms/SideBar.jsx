@@ -90,7 +90,7 @@ const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           </Link>
         </div>
 
-        <ul className="vertical-scrollbar flex h-full w-full flex-col gap-2 overflow-y-auto px-4">
+        <ul className="vertical-scrollbar flex h-full w-full flex-col gap-2 overflow-y-auto px-4 shadow shadow-text-[var(--color-text)]">
           <div className="flex w-full flex-col gap-2">
             {navigation.map((item, index) => {
               const { route, label, icon, subMenu } = item;
