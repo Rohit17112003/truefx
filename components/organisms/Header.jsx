@@ -32,9 +32,9 @@ const Header = ({ isSidebarOpen, setIsSidebarOpen, pageTitle }) => {
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           >
             {theme === "dark" ? (
-              <FaMoon className="h-5 w-5 md:h-6 md:w-6 text-[var(--color-text)]" />
+              <FaMoon className="text-[1.3rem] md:text-[1.5rem] text-[var(--color-text)]" />
             ) : (
-              <IoSunnyOutline className="h-7 w-7 md:h-8 md:w-8 text-[var(--color-text)]" />
+              <IoSunnyOutline className="text-[1.6rem] md:text-[2rem] text-[var(--color-text)]" />
             )}
           </span>
 

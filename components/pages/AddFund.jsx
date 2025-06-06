@@ -19,11 +19,11 @@ const AddFund = () => {
       </div>
       <div className="mt-4 rounded-lg border-2 border-[#b9b9b915]  bg-[var(--color-header)] py-6 ring ring-[#fcfdfd50] md:mx-4">
         <div className="flex w-full flex-row items-center justify-between px-4">
-          <span className="flex w-[250px] items-center rounded-4xl border border-[#D5D5D5]  bg-[var(--color-bg)] px-2 text-[0.9rem] md:h-10.5 md:w-[350px]">
+          <span className="flex w-[250px] items-center rounded-4xl border border-[#D5D5D5]  bg-[var(--color-bg)] px-4 text-[0.9rem] md:h-10.5 md:w-[350px]">
             {" "}
             <i className="ri-search-line text-[1.1rem]  text-[var(--color-secondary)]"></i>
             <input
-              className="w-full py-2 outline-none"
+              className="w-full py-2 px-1.5 outline-none"
               placeholder="Search here...."
             />
           </span>
