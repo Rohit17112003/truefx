@@ -24,6 +24,12 @@
   --color-secondary: #4d525f;
   --color-secondarys: #412b2b;
   --color-tertiary: #3d48b7;
+  --color-upibg:#F0F0F0;
+  --color-bankbg:#fff;
+  --color-upiheading:#4D4D4D;
+  --color-verified:#5C8A71;
+  --color-banktext:#666666;
+  --color-bgbtn:#E0F4FF;
 }
 
 /* Dark mode override */
@@ -42,6 +48,13 @@
   --color-secondary: #888888;
   --color-secondarys: #5e3b3b;
   --color-tertiary: #7c83ff;
+  --color-upibg:#3e3f3f;
+  --color-bankbg:#3e3f3f;
+  --color-upiheading:#ccc;
+  --color-verified:#000;
+  --color-banktext:#ffffff82;
+  --color-bgbtn:#3e3f3f;
+
 }
 
 /* Apply variables */
