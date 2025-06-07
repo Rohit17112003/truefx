@@ -1,13 +1,14 @@
 import MainLayout from '@/components/templates/MainLayout';
-import AddFund from '@/components/pages/AddFund';
-import React from 'react'
-
+import PaymentMethodKyc from '@/components/pages/PaymentMethodKyc';
 const page = () => {
   return (
-    <MainLayout pageTitle={"Hi Rohit 👋"}>
-     <AddFund/>
+    <MainLayout>
+      <PaymentMethodKyc/>
     </MainLayout>
   )
 }
 
 export default page;
+
+
+

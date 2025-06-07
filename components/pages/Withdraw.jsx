@@ -6,7 +6,7 @@ const Withdraw = () => {
 
 
     const handleWithrawClick = () => {
-    router.push("/withdraw-form"); // 👈 change to your actual route
+    router.push("/payment-method-withdraw"); // 👈 change to your actual route
   };
 
   return (

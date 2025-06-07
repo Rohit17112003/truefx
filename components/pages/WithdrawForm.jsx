@@ -137,7 +137,7 @@ export default function WithdrawForm() {
               <button
                 type="submit"
                 onClick={handleProceed}
-                className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-400"
+                className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-400 cursor-pointer"
               >
                 Withdraw
               </button>

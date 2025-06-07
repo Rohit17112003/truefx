@@ -4,14 +4,16 @@ import { useRouter } from "next/navigation";
 const AddFund = () => {
   const router = useRouter();
 
-  const handleAddFundClick = () => {
-    router.push("/addfund-form"); // 👈 change to your actual route
+  const handlePaymentMethodDeposit = () => {
+    router.push("/payment-method-deposit"); // 👈 change to your actual route
   };
+
+
   return (
     <>
       <div className="flex justify-end px-4">
         <button
-          onClick={handleAddFundClick}
+          onClick={handlePaymentMethodDeposit}
           className="rounded-md  bg-[var(--color-green)] px-4 py-2 md:text-[1.2rem] text-[1rem] font-bold text-white cursor-pointer"
         >
           Add Fund

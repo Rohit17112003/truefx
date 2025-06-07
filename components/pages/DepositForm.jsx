@@ -23,7 +23,7 @@ export default function AddFundForm() {
     }
 
     // Proceed to next page (replace '/' with your actual route)
-    router.push('/addfund'); // Change this route accordingly
+    router.push('/deposit'); // Change this route accordingly
   };
 
   return (
@@ -111,7 +111,7 @@ export default function AddFundForm() {
                 setDocNumber('');
                 setFile(null);
               }}
-              className="text-[var(--color-texts)] bg-[var(--color-header)] py-2 px-6 rounded-lg hover:bg-gray-200 border border-[#D1D5DB]"
+              className="text-[var(--color-texts)] bg-[var(--color-header)] py-2 px-6 rounded-lg hover:bg-gray-200 border border-[#D1D5DB] cursor-pointer"
             >
               Cancel
             </button>
@@ -119,7 +119,7 @@ export default function AddFundForm() {
             <button
               type="submit"
               onClick={handleProceed}
-              className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-600"
+              className="bg-[var(--color-green)] text-white py-2 px-6 rounded-lg hover:bg-green-600 cursor-pointer"
             >
              Invest
             </button>

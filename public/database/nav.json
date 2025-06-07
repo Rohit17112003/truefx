@@ -17,8 +17,8 @@
     },
     {
       "icon": "ri-folder-open-line",
-      "route": "/addfund",
-      "label": "Add Fund"
+      "route": "/deposit",
+      "label": "Deposit"
     },
     {
       "icon": "ri-folder-open-line",

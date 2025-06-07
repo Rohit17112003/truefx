@@ -1,11 +1,11 @@
 import React from 'react'
-import AddFundForm from '@/components/pages/AddFundForm';
+import DepositForm from '@/components/pages/DepositForm';
 import MainLayout from '@/components/templates/MainLayout';
 
 const page = () => {
   return (
     <MainLayout pageTitle={"Hi Rohit 👋"}>
-      <AddFundForm/>
+      <DepositForm/>
     </MainLayout>
   )
 }

@@ -88,7 +88,7 @@ const KycForm = () => {
               </div>
             </div>
 
-            <div className="flex w-full justify-center gap-7 rounded-md bg-[#0070BA]"  onClick={handleProceed}>
+            <div className="flex w-full justify-center gap-7 rounded-md bg-[#0070BA] cursor-pointer"  onClick={handleProceed}>
               <button
                 type="submit"
                
